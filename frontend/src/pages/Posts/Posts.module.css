@@ -1,0 +1,75 @@
+.pageCard {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+.cardHeader {
+  padding: 16px 20px;
+  border-bottom: 1px solid #e4e7ed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1f2329;
+  margin: 0;
+}
+
+.tableBody {
+  padding: 16px 20px;
+}
+
+.searchInput {
+  width: 200px;
+  border-radius: 6px;
+}
+
+.searchInput:hover,
+.searchInput:focus {
+  border-color: #3370ff;
+}
+
+.refreshBtn {
+  border-radius: 6px;
+}
+
+.refreshBtn:hover {
+  color: #3370ff;
+  border-color: #3370ff;
+}
+
+.viewBtn {
+  border-radius: 6px;
+}
+
+.viewBtn:hover {
+  color: #3370ff;
+  border-color: #3370ff;
+}
+
+.sentimentTag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.sentimentTag.positive {
+  background: #e8f5e9;
+  color: #34c724;
+}
+
+.sentimentTag.negative {
+  background: #ffebee;
+  color: #f54a45;
+}
+
+.sentimentTag.neutral {
+  background: #f5f7fa;
+  color: #646a73;
+}

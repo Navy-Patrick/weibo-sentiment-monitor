@@ -1,0 +1,138 @@
+.pageCard {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+.cardHeader {
+  padding: 16px 20px;
+  border-bottom: 1px solid #e4e7ed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1f2329;
+  margin: 0;
+}
+
+.loadingWrap {
+  padding: 48px;
+  display: flex;
+  justify-content: center;
+}
+
+.formBody {
+  padding: 24px 20px;
+}
+
+.section {
+  margin-bottom: 24px;
+}
+
+.sectionTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2329;
+  margin: 0 0 16px 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e4e7ed;
+}
+
+.starItem {
+  padding: 12px 16px !important;
+  background: #f5f7fa;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.starInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.starName {
+  font-weight: 500;
+  color: #1f2329;
+}
+
+.starFans {
+  color: #646a73;
+  font-size: 13px;
+}
+
+.statusAlert {
+  margin-bottom: 24px;
+  border-radius: 8px;
+}
+
+.form {
+  max-width: 600px;
+}
+
+.form :global(.ant-form-item-label > label) {
+  color: #646a73;
+  font-weight: 500;
+}
+
+.input {
+  border-radius: 6px;
+}
+
+.input:hover,
+.input:focus {
+  border-color: #3370ff;
+}
+
+.inlineRow {
+  display: flex;
+  gap: 24px;
+}
+
+.inlineItem {
+  margin-bottom: 16px;
+}
+
+.numberInput {
+  width: 120px;
+  border-radius: 6px;
+}
+
+.footer {
+  margin-top: 24px;
+  display: flex;
+  gap: 12px;
+}
+
+.startBtn {
+  border-radius: 6px;
+  background: #3370ff;
+  height: 36px;
+  padding: 0 24px;
+}
+
+.startBtn:hover {
+  background: #5e8cff;
+}
+
+.stopBtn {
+  border-radius: 6px;
+  height: 36px;
+}
+
+.helpText {
+  color: #646a73;
+  font-size: 13px;
+  line-height: 1.8;
+  padding: 16px;
+  background: #f5f7fa;
+  border-radius: 8px;
+}
+
+.helpText p {
+  margin: 0;
+}
