@@ -5,6 +5,7 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from services.database import get_db, WeiboPost, Comment, Star, SystemConfig
 from datetime import datetime, timedelta
+import random
 import requests
 import os
 

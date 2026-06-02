@@ -67,7 +67,7 @@ class CollectionTask(Base):
     completed_at = Column(DateTime)
     created_at = Column(DateTime, default=datetime.utcnow)
 
-CDP_PROXY = "http://localhost:3456"
+CDP_PROXY = os.getenv("CDP_PROXY", "http://localhost:3456")
 
 # 全局采集状态
 _current_task = None

@@ -1,0 +1,37 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "8000:8000"
+    environment:
+      CDP_PROXY: http://cdp-proxy:3456
+    depends_on:
+      - cdp-proxy
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  cdp-proxy:
+    build:
+      context: .
+      dockerfile: cdp-proxy.Dockerfile
+    ports:
+      - "3456:3456"
+    environment:
+      CDP_PROXY_PORT: 3456
+      CDP_PROXY_HOST: 0.0.0.0
+      CHROME_CDP_URL: http://host.docker.internal:9222
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
+
+volumes:
+  backend_data:
